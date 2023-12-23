@@ -5,7 +5,7 @@ import os
 
 st.markdown('### A netflix 2023 "What We Watched" Hours-Viewed Report analysis')
 
-file_path = r'data\What_We_Watched_A_Netflix_Engagement_Report_2023Jan-Jun.xlsx'
+file_path = r'What_We_Watched_A_Netflix_Engagement_Report_2023Jan-Jun.xlsx'
 df = pd.read_excel(file_path, header=5, usecols=['Title', 'Available Globally?', 'Release Date',
        'Hours Viewed'])
 #create the title index

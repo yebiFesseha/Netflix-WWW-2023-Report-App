@@ -36,7 +36,7 @@ else:
     filt_df = df.loc[df['Release Year']==user_year_selection]
     filt_df['Release Year'] = filt_df['Release Year'].apply(lambda x: '{:.0f}'.format(x))
     #Dsiplay the table per release-year, 
-    st.markdown(f'##### Ranking per Release-year: In the year {user_year_selection}, there were {df.loc[df['Release Year']==user_year_selection].shape[0]} movies/tv shows that have been released.')
+    st.markdown(f"##### Ranking per Release-year: In the year {user_year_selection}, there were {df.loc[df['Release Year']==user_year_selection].shape[0]} movies/tv shows that have been released.")
     st.dataframe(filt_df)
 
 #top10 bar chart of all time and per year

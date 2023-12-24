@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import openpyxl
 import os
 
 st.markdown('### A netflix 2023 "What We Watched" Hours-Viewed Report analysis')
